@@ -1,0 +1,49 @@
+{
+  "name": "electron",
+  "productName": "Image Risizer",
+  "version": "1.0.0",
+  "description": "My Electron application description",
+  "main": "src/main.js",
+  "scripts": {
+    "start": "node start.js",
+    "forge:start": "electron-forge start",
+    "dev": "vite",
+    "build": "vite build",
+    "package": "electron-forge package",
+    "make": "electron-forge make",
+    "publish": "electron-forge publish",
+    "lint": "echo \"No linting configured\""
+  },
+  "build": {
+    "appid": "com.pansy9.imagerisizer",
+    "productName": "Image Risizer",
+    "icon": "src/assets/icons/logo.png",
+    "win": {
+      "target": [
+        "portable"
+      ]
+    }
+  },
+  "keywords": [],
+  "author": "pansy9",
+  "license": "MIT",
+  "dependencies": {
+    "electron-squirrel-startup": "^1.0.1",
+    "vue": "^3.5.17"
+  },
+  "devDependencies": {
+    "@electron-forge/cli": "^7.8.1",
+    "@electron-forge/maker-deb": "^7.8.1",
+    "@electron-forge/maker-rpm": "^7.8.1",
+    "@electron-forge/maker-squirrel": "^7.8.1",
+    "@electron-forge/maker-zip": "^7.8.1",
+    "@electron-forge/plugin-auto-unpack-natives": "^7.8.1",
+    "@electron-forge/plugin-fuses": "^7.8.1",
+    "@electron/fuses": "^1.8.0",
+    "@vitejs/plugin-vue": "^5.0.0",
+    "electron": "^36.5.0",
+    "electron-builder": "^26.0.12",
+    "electron-packager": "^17.1.2",
+    "vite": "^5.0.0"
+  }
+}
